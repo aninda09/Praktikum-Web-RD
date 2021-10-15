@@ -1,0 +1,36 @@
+html {
+    margin: 20px;
+    background-color: #B8860B;
+    font-family: monospace;
+}
+
+header {
+    background-color: #	B8860B;
+    border: 3px black solid;
+}
+
+nav {
+    background-color: #B8860B;
+    border-left: 3px black solid;
+    border-right: 3px black solid;
+    text-align: center;
+}
+
+footer {
+    background-color: #B8860B;
+    border-bottom: 3px black solid;
+    border-left: 3px black solid;
+    border-right: 3px black solid;
+}
+
+.BIODATA {
+    width: 80%;
+    background-color: #BDB76B;
+}
+
+.BODY {
+    width: auto;
+    height: auto;
+    display: flex;
+    border: 3px black solid;
+}
