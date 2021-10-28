@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aninda Agustia Andiani - Tugas Praktikum Minggu ke 3</title>
+
+        <link rel="stylesheet" type="text/css" href="mgg3.css">
+        <script src="mgg3.js" defer></script>
+    </head>
+    <body>
+    <div class="std">
+            <div class="tema">
+                <label for="theme">leggo pick ur theme</label>
+                <select id="pilihtema" onchange="theme()">
+                    <option value="dark" class="dark">Dark</option>
+                    <option value="light" class="light" selected>Light</option>
+                </select>
+            </div>
+            
+            <div class="holla welcome to my website">
+                <h1>holla Welcome to my website!</h1>
+            </div>
+            
+
+            <div class="teks">
+                <label for="series">hi choose ur fav series</label>
+                <select id="pilihseries" onchange="series()">
+                    <option value="EIP" selected>Emily in Paris</option>
+                    <option value="FTB">Feel the Beat</option>
+                    <option value="">Anne with an E</option>
+                </select>
+                <p id="desc"></p>                
+            </div>
+
+            <div class="faktorial">
+                <p>Insert number to know its factorials!</p>
+                <lable for="factorial">Insert Number:</lable>
+                <input id="numbers" >
+                <button id="jumlah" onclick="count()">Calculate</button>
+                <p id="hasil"></p>
+            </div>
+        </div>                
+    </body>
+</html>

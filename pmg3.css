@@ -1,0 +1,69 @@
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: flex;     
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+.std{
+    display: flex;
+    justify-content: left;    
+    flex-direction: column;    
+}
+
+.holla welcome to my web!{
+    text-align: flex;
+    font-size: 20px;
+}
+
+.teks{
+    font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+    margin-bottom: 20px;    
+}
+
+#pilihseries{
+    border: 2px solid #05299e;
+    border-radius: 3px;
+}
+
+.tema{
+    font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; 
+    margin-top: 30px;  
+}
+
+#pilihtema{
+    border: 2px solid #080a99;
+    border-radius: 3px;
+}
+
+.dark {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.faktorial{
+    font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';  
+}
+
+.faktorial p{
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+#number{
+    border: 2px solid #1222b3;
+    border-radius: 3px;
+}
+
+#jumlah{
+    border: 2px solid #160897;
+    border-radius: 3px;
+}
