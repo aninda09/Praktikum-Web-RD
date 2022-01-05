@@ -1,35 +1,94 @@
+<?php
+session_start();
+if (isset($_SESSION['userID'])) {
+    header('Location:home.php');
+    die();
+}
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>FREQUENCY</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>percobaan m8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            position: relative;
+            background: linear-gradient(263deg, #00000059, #00000036);
+        }
+
+        .body-bg {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .bucket {
+            width: 25vw;
+            background-color: darkolivegreen;
+            /* margin: 25vh auto; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 25px;
+            font-size: 12pt;
+            /* box-shadow: 10px 10px 5px grey; */
+        }
+
+        .bucket p {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .login-field {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            /* background: transparent; */
+            border: none;
+            text-shadow: 0 0 gray;
+            font-weight: 600;
+            opacity: 0.8;
+            /* color: white; */
+            border-radius: 7px;
+        }
+
+        .login-btn-submit {
+            background-color: green;
+            color: white;
+            font-size: 12pt;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <ul>
-    <li class="active"><a href="index.php">Home</a></li>
-    <li><a href="formdaftar.php">Daftar</a></li>
-    <li><a href="listdata.php">Pendaftar</a></li>
-    <li style="float:right"><a>FREQUENCY</a></li>
-    </ul>
-        <center><h1>PENDAFTARAN FREQUENCY</h3>
-                <h2>INSTITUT TEKNOLOGI SUMATERA</h1>
-                <h3>TAHUN 2021</h2>
-        </center>
-        <center>
-            <a href="formdaftar.php"> <button>Daftar Baru</button></a>
-            <a href="listdata.php"> <button>Pendaftar</button></a>
-            <br>
-            <br>
-            <br>
-         <right>
-                 <h3>UKM FREQUENCY ITERA</h2>
-    <b> Alamat </b>: Jl. Terusan Ryacudu Way Huwi, Jati Agung, Kabupaten Lampung Selatan, Lampung Kode Pos 35365 <br> <br>
-    <b> Contact Person </b>: 0853 8139 1887 <br> <br>
-    <b> Email </b>: frequency@gmail.com <br> <br>
-    <b> Website </b>: frequency.wordpress.com <br> <br>
-    <b> Instagram </b>: mc_radiokampusitera
-    </p>
-</right>
-    </body>
+    <!-- <img src="./assets/wave.svg" alt="wave background" class="body-bg"> -->
+    <div class="bucket">
+        <p>Login For Continue </p>
+        <form action="./login.php" method="post" class="login">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" id="uname" placeholder="Username..." class="login-field">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" placeholder="Pasword..." class="login-field">
+            <input type="submit" name="login" value="Login" class="login-btn-submit">
+        </form>
+    </div>
+</body>
+
 </html>
